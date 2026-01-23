@@ -1,0 +1,20 @@
+{
+    "users": {
+        "accepted_usernames": {
+            "standard" : "standard_user",
+            "locked_out" : "locked_out_user",
+            "problematic" : "problem_user",
+            "performance_glitch" : "performance_glitch",
+            "error" : "error_user",
+            "visual" : "visual_user" 
+        },
+        "password_for_users" : "secret_sauce",
+        "wrong_password" : "wrong_password"
+    },
+    "errorMsg": {
+        "required_username" : "Epic sadface: Username is required",
+        "required_password" : "Epic sadface: Password is required",
+        "locked_out" : "Epic sadface: Sorry, this user has been locked out.",
+        "invalid_credentials" : "Epic sadface: Username and password do not match any user in this service" 
+    }
+}
