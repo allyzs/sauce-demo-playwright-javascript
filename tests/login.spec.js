@@ -31,3 +31,14 @@ test('Validate that user is successfully logged in', async({loginPage, inventory
     await loginPage.login(loginUsers.accepted_usernames.standard, loginUsers.password_for_users);
     await inventoryPage.validateInvetoryPageIsVisible();
 });
+
+test('Validate that error message is displayed after navigating to Inventory without logging in', async ({loginPage}) => {
+    await loginPage.navigateToInventoryPage();
+    await loginPage.validateLoginErrorMsg(loginErrorMsg.invalid_access);
+})
+
+test('Validate that user is back to Log In screen after Log out', async({loginPage}) => {
+    await loginPage.login(loginUsers.accepted_usernames.standard, loginUsers.password_for_users);
+    await loginPage.sidebar.logout();
+    await loginPage.validateLoginScreen();
+});

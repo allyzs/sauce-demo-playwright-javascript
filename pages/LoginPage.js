@@ -1,5 +1,6 @@
 import { expect } from "@playwright/test";
 import { BasePage } from "./basePage";
+import { SideBarMenu } from "../components/SideBarMenu";
 
 export class LoginPage extends BasePage {
   constructor(page) {
@@ -8,6 +9,8 @@ export class LoginPage extends BasePage {
     this.password = this.page.locator('#password');
     this.loginBtn = this.page.locator('#login-button');
     this.errorMsgContainer = this.page.locator('.error-message-container');
+    
+    this.sidebar = new SideBarMenu(page);
   }
 
   async fillUsername(username) {
@@ -34,5 +37,16 @@ export class LoginPage extends BasePage {
 
   async validateUserIsLoggedIn() {
     await expect(this.inventoryContainer).toBeVisible();
+  }
+
+  async validateLoginScreen() {
+    await expect(this.username).toBeVisible();
+    await expect(this.password).toBeVisible();
+    await expect(this.loginBtn).toBeVisible();
+  }
+
+  async validateLoginFieldsToBeEmpty() {
+    await expect(this.username).toContainText('');
+    await expect(this.password).toContainText('');
   }
 }

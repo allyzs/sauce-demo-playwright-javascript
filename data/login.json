@@ -15,6 +15,7 @@
         "required_username" : "Epic sadface: Username is required",
         "required_password" : "Epic sadface: Password is required",
         "locked_out" : "Epic sadface: Sorry, this user has been locked out.",
-        "invalid_credentials" : "Epic sadface: Username and password do not match any user in this service" 
+        "invalid_credentials" : "Epic sadface: Username and password do not match any user in this service",
+        "invalid_access": "You can only access '/inventory.html' when you are logged in."
     }
 }
