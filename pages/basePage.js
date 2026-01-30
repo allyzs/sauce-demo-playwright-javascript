@@ -6,8 +6,4 @@ export class BasePage {
   async openSauceDemo() {
     await this.page.goto('/');
   }
-
-  async navigateToInventoryPage() {
-    await this.page.goto('https://www.saucedemo.com/inventory.html');
-  }
 }
