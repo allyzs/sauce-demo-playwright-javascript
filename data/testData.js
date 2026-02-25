@@ -1,6 +1,6 @@
-const loginData = require('./login.json');
+import { users, errorMsg } from './login.json';
+import products from './products.json';
 
-module.exports = {
-    loginUsers: loginData.users,
-    loginErrorMsg: loginData.errorMsg
-}
+export const loginUsers = users;
+export const loginErrorMsg = errorMsg;
+export const productList = products;
