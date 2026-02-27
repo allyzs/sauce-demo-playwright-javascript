@@ -6,4 +6,8 @@ export class BasePage {
   async openSauceDemo() {
     await this.page.goto('/');
   }
+
+  async clickBrowserBack() {
+    await this.page.goBack();
+  }
 }
