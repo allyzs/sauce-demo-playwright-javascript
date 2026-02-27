@@ -1,8 +1,9 @@
 import { expect } from "@playwright/test";
+import { BasePage } from "../pages/basePage";
 
-export class CartHeader {
+export class CartHeader extends BasePage{
   constructor(page) {
-    this.page = page;
+    super(page);
     this.cart = this.page.locator('.shopping_cart_link');
     this.cartBadge = this.page.locator('.shopping_cart_badge');
   }

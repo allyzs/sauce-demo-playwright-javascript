@@ -30,7 +30,7 @@ test.describe('Login Tests', {tag: '@login'}, () => {
 
     test('Validate that user is successfully logged in', async({loginPage, inventoryPage}) => {
         await loginPage.login(loginUsers.accepted_usernames.standard, loginUsers.password_for_users);
-        await inventoryPage.validateInvetoryPageIsVisible();
+        await inventoryPage.validateInventoryPageIsVisible();
     });
 
     test('Validate that error message is displayed after navigating to Inventory without logging in', async ({loginPage, inventoryPage}) => {

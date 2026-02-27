@@ -19,22 +19,25 @@ export class InventoryPage extends CartHeader{
     await this.page.goto('/inventory.html');
   }
 
-  async validateInvetoryPageIsVisible() {
+  async validateInventoryPageIsVisible() {
     await expect(this.inventoryContainer).toBeVisible();
   }
 
+  async getProductDetails(index) {
+    return ({
+      "title" : await this.productTitle.nth(index).innerText(),
+      "description" :  await this.productDescription.nth(index).innerText(),
+      "price" :  await this.productPrice.nth(index).innerText(),
+      "image" : await this.productImage.nth(index).getAttribute('src')
+    })
+  }
   async getDisplayedProductDetails() {
     await this.inventoryContainer.waitFor();
     const products = await this.productCard.all();
     const displayedProducts = [];
 
     for(let i = 0; i < products.length; i++) {
-      displayedProducts.push({
-        "title" : await this.productTitle.nth(i).innerText(),
-        "description" :  await this.productDescription.nth(i).innerText(),
-        "price" :  await this.productPrice.nth(i).innerText(),
-        "image" : await this.productImage.nth(i).getAttribute('src')
-      })
+      displayedProducts.push(await this.getProductDetails(i))
     }
 
     const cleanedDisplayedProducts = displayedProducts.map(p => ({
