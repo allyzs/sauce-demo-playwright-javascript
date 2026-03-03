@@ -34,5 +34,9 @@ export class ProductDetailPage extends CartHeader{
     await this.removeButton.click();
   }
 
+  async validateUserIsNavigatedToProductDetailPage() {
+     await expect(this.page).toHaveURL(/inventory-item/);
+  }
+
 
 }
