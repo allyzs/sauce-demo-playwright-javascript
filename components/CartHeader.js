@@ -8,6 +8,10 @@ export class CartHeader extends BasePage{
     this.cartBadge = this.page.locator('.shopping_cart_badge');
   }
 
+  async openCart() {
+    await this.cart.click();
+  }
+
   async getNumberOfItemsInCart() {
     await this.cart.waitFor();
     return await this.cartBadge.isVisible() ? await this.cartBadge.innerText() : 0;
