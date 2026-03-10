@@ -9,6 +9,8 @@ permissions:
   contents: write
   pages: write
   id-token: write
+  pull-requests: write
+  checks: write
 
 jobs:
   test:
@@ -18,48 +20,58 @@ jobs:
       BASE_URL: ${{ vars.BASE_URL}}
 
     steps:
+      # 1 Checkout repository
       - name: Checkout repo
         uses: actions/checkout@v4
 
+      # 2 Setup node
       - name: Setup Node
         uses: actions/setup-node@v4
         with:
           node-version: 20
 
+      # 3 Install Dependecies
       - name: Install dependencies
         run: npm ci
 
+      # 4 Install Playwright browsers
       - name: Install Playwright browsers
         run: npx playwright install --with-deps
 
+      # 5 Read Environment Variables
       - name: Read Environment Variables
         run: echo "My BASE_URL value is ${{ vars.BASE_URL}}"
 
+      # 6 Run Playwright tests
       - name: Run tests
         run: npx playwright test
         continue-on-error: true
 
-      - name: Checkout gh-pages branch
-        if: always()
-        uses: actions/checkout@v4
-        with:
-          ref: gh-pages
-          path: gh-pages
-        continue-on-error: true
-
-      - name: Copy Allure history
+      # 7 Restore Allure history file (Allure 3 style)
+      - name: Restore Allure history
         if: always()
         run: |
-          if [ -d gh-pages/history ]; then
-            mkdir -p allure-results/history
-            cp -r gh-pages/history/* allure-results/history/
+          if [ -f gh-pages/allure-history/history.jsonl ]; then
+            mkdir -p allure-history
+            cp gh-pages/allure-history/history.jsonl allure-history/history.jsonl
           fi
 
+      # 8️ Generate Allure 3 report
       - name: Generate Allure report
         if: always()
-        run: npx allure generate
+        run: npx allure generate allure-results --clean -o allure-report
 
-      - name: Deploy to GitHub Pages
+      # 9️ Prepare history file for next run
+      - name: Persist Allure history
+        if: always()
+        run: |
+          mkdir -p allure-report/allure-history
+          if [ -f allure-history/history.jsonl ]; then
+            cp allure-history/history.jsonl allure-report/allure-history/history.jsonl
+          fi
+
+      # 10 Deploy report to GitHub Pages
+      - name: Deploy Allure report to GitHub Pages
         if: always()
         uses: peaceiris/actions-gh-pages@v4
         with:
