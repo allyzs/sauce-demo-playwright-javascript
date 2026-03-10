@@ -9,7 +9,7 @@ permissions:
   contents: write
   pages: write
   id-token: write
-  
+
 jobs:
   test:
     runs-on: ubuntu-latest
@@ -39,13 +39,8 @@ jobs:
         run: npx allure run -- npx playwright test
         continue-on-error: true
 
-      - name: Upload Allure report
-        uses: actions/upload-artifact@v4
-        with:
-          name: allure-report
-          path: allure-report
-
       - name: Deploy to GitHub Pages
+        if: always()
         uses: peaceiris/actions-gh-pages@v4
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
