@@ -9,6 +9,9 @@ jobs:
   test:
     runs-on: ubuntu-latest
 
+    env:
+      BASE_URL: ${{ vars.BASE_URL}}
+
     steps:
       - name: Checkout repo
         uses: actions/checkout@v4
@@ -24,6 +27,9 @@ jobs:
       - name: Install Playwright browsers
         run: npx playwright install --with-deps
 
+      - name: Read Environment Variables
+        run: echo "My BASE_URL value is ${{ vars.BASE_URL}}"
+        
       - name: Run tests
         run: npx playwright test
 
