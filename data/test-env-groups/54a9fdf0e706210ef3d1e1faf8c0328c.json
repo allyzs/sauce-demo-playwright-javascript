@@ -1,1 +1,1 @@
-{"id":"54a9fdf0e706210ef3d1e1faf8c0328c","fullName":"inventory.spec.js:21:5","name":"Validate that cart counter is incremented based on the number of multiple items added","status":"passed","testResultsByEnv":{"default":"19ee967e27e625f6be216e68fbea7e58"}}
+{"id":"54a9fdf0e706210ef3d1e1faf8c0328c","fullName":"inventory.spec.js:21:5","name":"Validate that cart counter is incremented based on the number of multiple items added","status":"passed","testResultsByEnv":{"default":"027b55549deaff27bb94858b476a6a5a"}}
