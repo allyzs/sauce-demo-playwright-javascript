@@ -31,7 +31,7 @@ jobs:
         run: echo "My BASE_URL value is ${{ vars.BASE_URL}}"
 
       - name: Run tests and generate Allure report
-        run: npx playwright npx allure run -- npx playwright test
+        run: npx allure run -- npx playwright test
         continue-on-error: true
 
       - name: Upload Allure report
