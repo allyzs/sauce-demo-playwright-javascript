@@ -155,7 +155,7 @@ This project uses Allure Report for test reporting.
 Generate report
 
 ```bash
-npx allure generate ./allure-results --clean
+npx allure generate
 ```
 
 Open report
@@ -189,6 +189,10 @@ Potential enhancements:
 
 ---
 
+## 📊 Live Test Report
+https://allyzs.github.io/sauce-demo-playwright-javascript/
+
+---
+
 # Author
 -- Ally
-QA Automation project built using Playwright.

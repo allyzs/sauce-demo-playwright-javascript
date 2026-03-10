@@ -10,3 +10,4 @@ storageState.json
 .env
 /allure-report/
 /allure-results/
+history.jsonl
