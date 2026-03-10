@@ -1,0 +1,188 @@
+[dotenv@17.2.3] injecting env (0) from .env -- tip: 🔐 encrypt with Dotenvx: https://dotenvx.com
+✅ New session saved to storageState.json
+
+[2mRunning [22m33[2m tests using [22m1[2m worker[22m
+
+[dotenv@17.2.3] injecting env (0) from .env -- tip: 🔐 prevent committing .env to code: https://dotenvx.com/precommit
+  [32m✓[39m  [2m 1 [22m[Auth] › tests/cart.spec.js:7:5 › Validate that Cart Page can be opened in Inventory Page[2m (657ms)[22m
+  [32m✓[39m  [2m 2 [22m[Auth] › tests/cart.spec.js:12:5 › Validate that Cart Page can be opened in Product Details Page[2m (739ms)[22m
+  [32m✓[39m  [2m 3 [22m[Auth] › tests/cart.spec.js:21:5 › Validate that correct item details - Title, Description, and Price are displayed in Cart Page[2m (901ms)[22m
+  [32m✓[39m  [2m 4 [22m[Auth] › tests/cart.spec.js:32:5 › Validate that Product Detail Page is opened by clicking the item title in Cart Page[2m (1.1s)[22m
+  [31m✘[39m  [2m 5 [22m[31m[Auth] › tests/cart.spec.js:45:5 › Validate that Checkout button is disabled when the cart is empty[39m[2m (6.0s)[22m
+[dotenv@17.2.3] injecting env (0) from .env -- tip: 🔐 prevent building .env in docker: https://dotenvx.com/prebuild
+  [31m✘[39m  [2m 6 [22m[31m[Auth] › tests/cart.spec.js:45:5 › Validate that Checkout button is disabled when the cart is empty[39m[33m (retry #1)[39m[2m (6.0s)[22m
+[dotenv@17.2.3] injecting env (0) from .env -- tip: ✅ audit secrets and track compliance: https://dotenvx.com/ops
+  [31m✘[39m  [2m 7 [22m[31m[Auth] › tests/cart.spec.js:45:5 › Validate that Checkout button is disabled when the cart is empty[39m[33m (retry #2)[39m[2m (6.0s)[22m
+[dotenv@17.2.3] injecting env (0) from .env -- tip: ⚙️  override existing env vars with { override: true }
+  [32m✓[39m  [2m 8 [22m[Auth] › tests/cart.spec.js:51:5 › Validate that Cart Badge Number matches the number of listed items in Cart Page[2m (1.0s)[22m
+  [32m✓[39m  [2m 9 [22m[Auth] › tests/cart.spec.js:60:5 › Validate that user can navigate back to Inventory Page using Continue Shopping button[2m (725ms)[22m
+  [32m✓[39m  [2m10 [22m[Auth] › tests/cart.spec.js:66:5 › Validate that user can navigate back to Inventory Page using Browser Back Button[2m (750ms)[22m
+  [32m✓[39m  [2m11 [22m[Auth] › tests/cart.spec.js:72:5 › Validate that item in Cart Page can be removed[2m (911ms)[22m
+  [32m✓[39m  [2m12 [22m[Auth] › tests/inventory-item.spec.js:7:5 › Validate that correct product details - title, description, and the price are displayed when opened using Product Title[2m (749ms)[22m
+  [32m✓[39m  [2m13 [22m[Auth] › tests/inventory-item.spec.js:16:5 › Validate that correct product details - title, description, and the price are displayed when opened using Product Image[2m (788ms)[22m
+  [32m✓[39m  [2m14 [22m[Auth] › tests/inventory-item.spec.js:25:5 › Validate that user can navigate back to Inventory Page using Back Button[2m (673ms)[22m
+  [32m✓[39m  [2m15 [22m[Auth] › tests/inventory-item.spec.js:31:5 › Validate that user can navigate back to Inventory Page using Browser Back Button[2m (630ms)[22m
+  [32m✓[39m  [2m16 [22m[Auth] › tests/inventory-item.spec.js:37:5 › Validate that item can be added[2m (654ms)[22m
+  [32m✓[39m  [2m17 [22m[Auth] › tests/inventory-item.spec.js:44:5 › Validate that added item can be removed[2m (846ms)[22m
+  [32m✓[39m  [2m18 [22m[Auth] › tests/inventory.spec.js:8:5 › Validate that each product has the title, description, and the price displayed[2m (846ms)[22m
+  [32m✓[39m  [2m19 [22m[Auth] › tests/inventory.spec.js:12:5 › Validate that cart counter is incremented by 1 after adding 1 item[2m (745ms)[22m
+  [32m✓[39m  [2m20 [22m[Auth] › tests/inventory.spec.js:21:5 › Validate that cart counter is incremented based on the number of multiple items added[2m (890ms)[22m
+  [32m✓[39m  [2m21 [22m[Auth] › tests/inventory.spec.js:30:5 › Validate that cart counter is decremented by 1 after removing 1 item[2m (960ms)[22m
+  [32m✓[39m  [2m22 [22m[Auth] › tests/inventory.spec.js:43:5 › Validate that cart counter is decremented based on the number of multiple items removed[2m (1.1s)[22m
+  [32m✓[39m  [2m23 [22m[Auth] › tests/inventory.spec.js:56:5 › Validate that products details can be viewed or opened in Product View Page by clicking Product Title[2m (701ms)[22m
+  [32m✓[39m  [2m24 [22m[Auth] › tests/inventory.spec.js:63:5 › Validate that products details can be viewed or opened in Product View Page by clicking Product Image[2m (758ms)[22m
+  [32m✓[39m  [2m25 [22m[Auth] › tests/inventory.spec.js:72:9 › Validate that products are sorted by Name (A to Z)[2m (711ms)[22m
+  [32m✓[39m  [2m26 [22m[Auth] › tests/inventory.spec.js:72:9 › Validate that products are sorted by Name (Z to A)[2m (754ms)[22m
+  [32m✓[39m  [2m27 [22m[Auth] › tests/inventory.spec.js:72:9 › Validate that products are sorted by Price (low to high)[2m (727ms)[22m
+  [32m✓[39m  [2m28 [22m[Auth] › tests/inventory.spec.js:72:9 › Validate that products are sorted by Price (high to low)[2m (753ms)[22m
+[dotenv@17.2.3] injecting env (0) from .env -- tip: ⚙️  suppress all logs with { quiet: true }
+  [32m✓[39m  [2m29 [22m[No Auth] › tests/login.spec.js:9:9 › Login Tests › Validate that username is required @login[2m (581ms)[22m
+  [32m✓[39m  [2m30 [22m[No Auth] › tests/login.spec.js:15:9 › Login Tests › Validate that password is required @login[2m (495ms)[22m
+  [32m✓[39m  [2m31 [22m[No Auth] › tests/login.spec.js:21:9 › Login Tests › Validate that error message for locked out user is displayed @login[2m (519ms)[22m
+  [32m✓[39m  [2m32 [22m[No Auth] › tests/login.spec.js:26:9 › Login Tests › Validate that error message for wrong password is displayed @login[2m (518ms)[22m
+  [32m✓[39m  [2m33 [22m[No Auth] › tests/login.spec.js:31:9 › Login Tests › Validate that user is successfully logged in @login[2m (630ms)[22m
+  [32m✓[39m  [2m34 [22m[No Auth] › tests/login.spec.js:36:9 › Login Tests › Validate that error message is displayed after navigating to Inventory without logging in @login[2m (546ms)[22m
+  [32m✓[39m  [2m35 [22m[No Auth] › tests/login.spec.js:41:9 › Login Tests › Validate that user is back to Log In screen after Log out @login[2m (1.5s)[22m
+
+
+[31m  1) [Auth] › tests/cart.spec.js:45:5 › Validate that Checkout button is disabled when the cart is empty [39m
+
+    Error: [2mexpect([22m[31mlocator[39m[2m).[22mtoBeDisabled[2m([22m[2m)[22m failed
+
+    Locator:  locator('.checkout_button')
+    Expected: disabled
+    Received: enabled
+    Timeout:  5000ms
+
+    Call log:
+    [2m  - Expect "toBeDisabled" with timeout 5000ms[22m
+    [2m  - waiting for locator('.checkout_button')[22m
+    [2m    9 × locator resolved to <button id="checkout" name="checkout" data-test="checkout" class="btn btn_action btn_medium checkout_button ">Checkout</button>[22m
+    [2m      - unexpected value "enabled"[22m
+
+
+    [90m   at [39m../pages/CartPage.js:79
+
+    [0m [90m 77 |[39m
+     [90m 78 |[39m   [36masync[39m validateCheckoutButtonIsDisabled() {
+    [31m[1m>[22m[39m[90m 79 |[39m     [36mawait[39m expect([36mthis[39m[33m.[39mcheckOutBtn)[33m.[39mtoBeDisabled()[33m;[39m
+     [90m    |[39m                                    [31m[1m^[22m[39m
+     [90m 80 |[39m   }
+     [90m 81 |[39m
+     [90m 82 |[39m   [36masync[39m validateThatCartBadgeNumberMatchesTheNumberOfItemsInCart() {[0m
+    [2m    at CartPage.validateCheckoutButtonIsDisabled (/home/runner/work/sauce-demo-playwright-javascript/sauce-demo-playwright-javascript/pages/CartPage.js:79:36)[22m
+    [2m    at /home/runner/work/sauce-demo-playwright-javascript/sauce-demo-playwright-javascript/tests/cart.spec.js:48:20[22m
+
+[2m    attachment #1: [1mscreenshot[2m (image/png) [2m──────────────────────────────────────────────────────────[2m[22m
+[2m    test-results/cart-Validate-that-Checkou-c40fa-bled-when-the-cart-is-empty-Auth/test-failed-1.png[22m
+[2m    [2m────────────────────────────────────────────────────────────────────────────────────────────────[2m[22m
+
+[2m    attachment #2: [1mvideo[2m (video/webm) [2m──────────────────────────────────────────────────────────────[2m[22m
+[2m    test-results/cart-Validate-that-Checkou-c40fa-bled-when-the-cart-is-empty-Auth/video.webm[22m
+[2m    [2m────────────────────────────────────────────────────────────────────────────────────────────────[2m[22m
+
+[2m    Error Context: test-results/cart-Validate-that-Checkou-c40fa-bled-when-the-cart-is-empty-Auth/error-context.md[22m
+
+[2m    attachment #4: [1mtrace[2m (application/zip) [2m─────────────────────────────────────────────────────────[2m[22m
+[2m    test-results/cart-Validate-that-Checkou-c40fa-bled-when-the-cart-is-empty-Auth/trace.zip[22m
+[2m    Usage:[22m
+
+[2m        npx playwright show-trace test-results/cart-Validate-that-Checkou-c40fa-bled-when-the-cart-is-empty-Auth/trace.zip[22m
+
+[2m    [2m────────────────────────────────────────────────────────────────────────────────────────────────[2m[22m
+
+[90m    Retry #1 [2m───────────────────────────────────────────────────────────────────────────────────────[22m[39m
+
+    Error: [2mexpect([22m[31mlocator[39m[2m).[22mtoBeDisabled[2m([22m[2m)[22m failed
+
+    Locator:  locator('.checkout_button')
+    Expected: disabled
+    Received: enabled
+    Timeout:  5000ms
+
+    Call log:
+    [2m  - Expect "toBeDisabled" with timeout 5000ms[22m
+    [2m  - waiting for locator('.checkout_button')[22m
+    [2m    9 × locator resolved to <button id="checkout" name="checkout" data-test="checkout" class="btn btn_action btn_medium checkout_button ">Checkout</button>[22m
+    [2m      - unexpected value "enabled"[22m
+
+
+    [90m   at [39m../pages/CartPage.js:79
+
+    [0m [90m 77 |[39m
+     [90m 78 |[39m   [36masync[39m validateCheckoutButtonIsDisabled() {
+    [31m[1m>[22m[39m[90m 79 |[39m     [36mawait[39m expect([36mthis[39m[33m.[39mcheckOutBtn)[33m.[39mtoBeDisabled()[33m;[39m
+     [90m    |[39m                                    [31m[1m^[22m[39m
+     [90m 80 |[39m   }
+     [90m 81 |[39m
+     [90m 82 |[39m   [36masync[39m validateThatCartBadgeNumberMatchesTheNumberOfItemsInCart() {[0m
+    [2m    at CartPage.validateCheckoutButtonIsDisabled (/home/runner/work/sauce-demo-playwright-javascript/sauce-demo-playwright-javascript/pages/CartPage.js:79:36)[22m
+    [2m    at /home/runner/work/sauce-demo-playwright-javascript/sauce-demo-playwright-javascript/tests/cart.spec.js:48:20[22m
+
+[2m    attachment #1: [1mscreenshot[2m (image/png) [2m──────────────────────────────────────────────────────────[2m[22m
+[2m    test-results/cart-Validate-that-Checkou-c40fa-bled-when-the-cart-is-empty-Auth-retry1/test-failed-1.png[22m
+[2m    [2m────────────────────────────────────────────────────────────────────────────────────────────────[2m[22m
+
+[2m    attachment #2: [1mvideo[2m (video/webm) [2m──────────────────────────────────────────────────────────────[2m[22m
+[2m    test-results/cart-Validate-that-Checkou-c40fa-bled-when-the-cart-is-empty-Auth-retry1/video.webm[22m
+[2m    [2m────────────────────────────────────────────────────────────────────────────────────────────────[2m[22m
+
+[2m    Error Context: test-results/cart-Validate-that-Checkou-c40fa-bled-when-the-cart-is-empty-Auth-retry1/error-context.md[22m
+
+[2m    attachment #4: [1mtrace[2m (application/zip) [2m─────────────────────────────────────────────────────────[2m[22m
+[2m    test-results/cart-Validate-that-Checkou-c40fa-bled-when-the-cart-is-empty-Auth-retry1/trace.zip[22m
+[2m    Usage:[22m
+
+[2m        npx playwright show-trace test-results/cart-Validate-that-Checkou-c40fa-bled-when-the-cart-is-empty-Auth-retry1/trace.zip[22m
+
+[2m    [2m────────────────────────────────────────────────────────────────────────────────────────────────[2m[22m
+
+[90m    Retry #2 [2m───────────────────────────────────────────────────────────────────────────────────────[22m[39m
+
+    Error: [2mexpect([22m[31mlocator[39m[2m).[22mtoBeDisabled[2m([22m[2m)[22m failed
+
+    Locator:  locator('.checkout_button')
+    Expected: disabled
+    Received: enabled
+    Timeout:  5000ms
+
+    Call log:
+    [2m  - Expect "toBeDisabled" with timeout 5000ms[22m
+    [2m  - waiting for locator('.checkout_button')[22m
+    [2m    9 × locator resolved to <button id="checkout" name="checkout" data-test="checkout" class="btn btn_action btn_medium checkout_button ">Checkout</button>[22m
+    [2m      - unexpected value "enabled"[22m
+
+
+    [90m   at [39m../pages/CartPage.js:79
+
+    [0m [90m 77 |[39m
+     [90m 78 |[39m   [36masync[39m validateCheckoutButtonIsDisabled() {
+    [31m[1m>[22m[39m[90m 79 |[39m     [36mawait[39m expect([36mthis[39m[33m.[39mcheckOutBtn)[33m.[39mtoBeDisabled()[33m;[39m
+     [90m    |[39m                                    [31m[1m^[22m[39m
+     [90m 80 |[39m   }
+     [90m 81 |[39m
+     [90m 82 |[39m   [36masync[39m validateThatCartBadgeNumberMatchesTheNumberOfItemsInCart() {[0m
+    [2m    at CartPage.validateCheckoutButtonIsDisabled (/home/runner/work/sauce-demo-playwright-javascript/sauce-demo-playwright-javascript/pages/CartPage.js:79:36)[22m
+    [2m    at /home/runner/work/sauce-demo-playwright-javascript/sauce-demo-playwright-javascript/tests/cart.spec.js:48:20[22m
+
+[2m    attachment #1: [1mscreenshot[2m (image/png) [2m──────────────────────────────────────────────────────────[2m[22m
+[2m    test-results/cart-Validate-that-Checkou-c40fa-bled-when-the-cart-is-empty-Auth-retry2/test-failed-1.png[22m
+[2m    [2m────────────────────────────────────────────────────────────────────────────────────────────────[2m[22m
+
+[2m    attachment #2: [1mvideo[2m (video/webm) [2m──────────────────────────────────────────────────────────────[2m[22m
+[2m    test-results/cart-Validate-that-Checkou-c40fa-bled-when-the-cart-is-empty-Auth-retry2/video.webm[22m
+[2m    [2m────────────────────────────────────────────────────────────────────────────────────────────────[2m[22m
+
+[2m    Error Context: test-results/cart-Validate-that-Checkou-c40fa-bled-when-the-cart-is-empty-Auth-retry2/error-context.md[22m
+
+[2m    attachment #4: [1mtrace[2m (application/zip) [2m─────────────────────────────────────────────────────────[2m[22m
+[2m    test-results/cart-Validate-that-Checkou-c40fa-bled-when-the-cart-is-empty-Auth-retry2/trace.zip[22m
+[2m    Usage:[22m
+
+[2m        npx playwright show-trace test-results/cart-Validate-that-Checkou-c40fa-bled-when-the-cart-is-empty-Auth-retry2/trace.zip[22m
+
+[2m    [2m────────────────────────────────────────────────────────────────────────────────────────────────[2m[22m
+
+[31m  1 failed[39m
+[31m    [Auth] › tests/cart.spec.js:45:5 › Validate that Checkout button is disabled when the cart is empty [39m
+[32m  32 passed[39m[2m (49.2s)[22m
