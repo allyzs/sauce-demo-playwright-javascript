@@ -33,10 +33,19 @@ test.describe('Login Tests', {tag: '@login'}, () => {
         await inventoryPage.validateInventoryPageIsVisible();
     });
 
-    test('Validate that error message is displayed after navigating to Inventory without logging in', async ({loginPage, inventoryPage}) => {
-        await inventoryPage.open();
-        await loginPage.validateLoginErrorMsg(loginErrorMsg.invalid_access);
-    })
+    const pages = [{ name : "Inventory", url : "/inventory.html"},
+                   { name : "Cart", url : "/cart.html"},
+                   { name : "Check Out - Your Information", url : "/checkout-step-one.html"},
+                   { name : "Check Out - Overview", url : "/checkout-step-two.html"},
+                   { name : "Check Out - Complete", url : "/checkout-complete.html"},
+                  ]
+
+    pages.forEach( page => {
+        test(`Validate that error message is displayed after navigating to ${page.name} without logging in`, async ({loginPage}) => {
+            await loginPage.openPage(page.url);
+            await loginPage.validateInvalidAccess(loginErrorMsg.invalid_access, page.url);
+        });
+    });
 
     test('Validate that user is back to Log In screen after Log out', async({loginPage}) => {
         await loginPage.login(loginUsers.accepted_usernames.standard, loginUsers.password_for_users);
