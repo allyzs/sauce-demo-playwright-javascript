@@ -1,1 +1,1 @@
-{"id":"8b1053622ed473c1dc20b44ac2fa56e4","fullName":"inventory.spec.js:72:9","name":"Validate that products are sorted by Price (high to low)","status":"passed","testResultsByEnv":{"default":"b379f91958970b432dd60a2f068811db"}}
+{"id":"8b1053622ed473c1dc20b44ac2fa56e4","fullName":"inventory.spec.js:72:9","name":"Validate that products are sorted by Price (high to low)","status":"passed","testResultsByEnv":{"default":"b61bc22e0e4901159d6c47a2e477ddca"}}
