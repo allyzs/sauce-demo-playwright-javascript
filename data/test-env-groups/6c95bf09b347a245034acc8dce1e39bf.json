@@ -1,1 +1,1 @@
-{"id":"6c95bf09b347a245034acc8dce1e39bf","fullName":"inventory.spec.js:8:5","name":"Validate that each product has the title, description, and the price displayed","status":"passed","testResultsByEnv":{"default":"c5f279043873ef5e79567e04ea886412"}}
+{"id":"6c95bf09b347a245034acc8dce1e39bf","fullName":"inventory.spec.js:8:5","name":"Validate that each product has the title, description, and the price displayed","status":"passed","testResultsByEnv":{"default":"8d54519d4494dc9ffba473bb63aeee7f"}}

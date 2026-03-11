@@ -1,1 +1,1 @@
-{"id":"559826d6b55e4a8dddf2163d053db27a","fullName":"inventory.spec.js:30:5","name":"Validate that cart counter is decremented by 1 after removing 1 item","status":"passed","testResultsByEnv":{"default":"8dc5e876365b1610ad1c2321f1fff069"}}
+{"id":"559826d6b55e4a8dddf2163d053db27a","fullName":"inventory.spec.js:30:5","name":"Validate that cart counter is decremented by 1 after removing 1 item","status":"passed","testResultsByEnv":{"default":"b0a153e4a2aee14f0c33b95f10c8dbee"}}

@@ -1,1 +1,1 @@
-{"id":"53b00e4ce151a5e00ba5862f44dae2a7","fullName":"cart.spec.js:21:5","name":"Validate that correct item details - Title, Description, and Price are displayed in Cart Page","status":"passed","testResultsByEnv":{"default":"632c168fc7fdaca7b51957b9607fdfcf"}}
+{"id":"53b00e4ce151a5e00ba5862f44dae2a7","fullName":"cart.spec.js:21:5","name":"Validate that correct item details - Title, Description, and Price are displayed in Cart Page","status":"passed","testResultsByEnv":{"default":"ec2737e9b95e0d38063f178ae712adb6"}}
